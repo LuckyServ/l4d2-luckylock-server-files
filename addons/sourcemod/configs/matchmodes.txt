@@ -1,0 +1,52 @@
+"MatchModes"
+{
+	"ZoneMod 1.9.3"
+	{
+		"zonemod"
+		{
+			"name" "4v4 ZoneMod"
+		}
+		"zm3v3"
+		{
+			"name" "3v3 ZoneMod"
+		}
+		"zm2v2"
+		{
+			"name" "2v2 ZoneMod"
+		}
+		"zm1v1"
+		{
+			"name" "1v1 ZoneMod"
+		}
+	}
+	"Apex 1.1.1"
+	{
+		"apex"
+		{
+			"name" "4v4 Apex"
+		}
+		"apexhunters"
+		{
+			"name" "4v4 Apex Hunters"
+		}
+		"apexhunters3v3"
+		{
+			"name" "3v3 Apex Hunters"
+		}
+		"apexhunters2v2"
+		{
+			"name" "2v2 Apex Hunters"
+		}
+		"apexhunters1v1"
+		{
+			"name" "1v1 Apex Hunters"
+		}
+	}
+	"OpenMod 0.0.5"
+	{
+		"openmod"
+		{
+			"name" "4v4 OpenMod"
+		}
+	}
+}

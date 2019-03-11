@@ -1,0 +1,17 @@
+"boss_data"
+{
+	"info"
+	{
+		"totalbosses"		"1"
+	}
+	"boss"
+	{
+		"boss0"
+		{
+			"tank_min"	"10"
+			"tank_max"	"35"
+			"witch_min"	"55"
+			"witch_max"	"90"
+		}
+	}
+}
