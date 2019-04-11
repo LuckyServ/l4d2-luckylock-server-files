@@ -44,4 +44,4 @@ src/
 stats.txt
 steam.inf
 whitelist.cfg
-addons/sourcemod/data/admin_cache_dump.txt
+addons/sourcemod/data/*
