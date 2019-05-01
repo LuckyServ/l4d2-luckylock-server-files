@@ -45,3 +45,7 @@ stats.txt
 steam.inf
 whitelist.cfg
 addons/sourcemod/data/*
+addons/sourcemod/configs/test-crash-dump-generation
+addons/sourcemod/extensions/accelerator.autoload
+addons/sourcemod/extensions/accelerator.ext.so
+addons/sourcemod/gamedata/accelerator.games.txt

@@ -1,0 +1,853 @@
+./Changelogs/Zonemod-1.6.md:  * Hunters can no longer be shoved except for when they have a cap.
+./Changelogs/Zonemod-1.6.md:  	* The shoves on Standing hunters were simply too inconsistent (affected by ping)  
+./Changelogs/Zonemod-1.9.3.md:* **Shoves/M2:**
+./Changelogs/Zonemod-1.9.3.md:  * Survivors now get fatigued after **3** Shoves. (was **5**)
+./Changelogs/Zonemod-1.9.3.md:  * Shoving a Jockey/Smoker will add a penalty of **1**. (Meaning a Shove against SI counts as **2** Shoves)
+./Changelogs/Zonemod-1.9.3.md:  * Reduced Shove FOV.
+./Changelogs/Zonemod-1.9.3.md:    * This simply means that your Shove needs to be more precise to actually deadstop a Jockey.
+./Changelogs/Zonemod-1.9.3.md:> **Developer Comment:** While Jockeys are definitely the buggiest SI around, this is no excuse for sloppy and inaccurate shoves deadstopping Jockeys. 
+./cfg/cfgogl/apex/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./cfg/cfgogl/apex/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./cfg/cfgogl/apex/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 15
+./cfg/cfgogl/openmod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./cfg/cfgogl/openmod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./cfg/cfgogl/openmod/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 30
+./cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 30
+./logs/L192_223_024_083_27015_201904142105_000.log:L 04/14/2019 - 21:40:23: (INCAP) "Nick<47><BOT><Survivor><Gambler><ALIVE><87+0><setpos_exact 39.31 28.37 -65.97; setang 75.35 238.54 0.00><Area 60596>" shoved and stops reviving "Yeezy4Prez2020<2><STEAM_1:1:19471075><Survivor><Producer><INCAP><267+0><setpos_exact 48.14 27.91 -97.34; set
+./logs/L192_223_024_083_27015_201904141846_001.log:L 04/14/2019 - 18:54:38: (INCAP) "Luckylock<4><STEAM_1:0:45642771><Survivor><Manager><ALIVE><6+0><setpos_exact 5645.90 3189.99 638.03; setang 4.87 -115.63 0.00><Area 56311>" shoved and stops reviving "ohzy<88><STEAM_1:1:31577540><Survivor><NamVet><INCAP><260+0><setpos_exact 5727.29 3146
+./logs/L192_223_024_083_27015_201904141846_001.log:L 04/14/2019 - 18:56:55: (INCAP) "ohzy<88><STEAM_1:1:31577540><Survivor><NamVet><LIMPING><1+9><setpos_exact 9266.92 3979.94 702.03; setang 15.62 116.24 0.00><Area 56463>" shoved and stops reviving "Impulse<82><STEAM_1:1:50856379><Survivor><TeenGirl><INCAP><260+0><setpos_exact 9216.00 39
+Binary file ./reslists/nav_test.dict matches
+./reslists/c3m2_swamp.snd:"Zombie.Shoved"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_03.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_04.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_05.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_06.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_07.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_03.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_04.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_05.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_06.wav"
+./reslists/c2m5_concert.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_07.wav"
+./reslists/c2m3_coaster.snd:"Zombie.Shoved"
+./reslists/c5m5_bridge.snd:"Zombie.Shoved"
+./reslists/c2m5_concert.snd:"Zombie.Shoved"
+./reslists/c4m1_milltown_a.snd:"Zombie.Shoved"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c4m1_milltown_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c1m1_hotel.snd:"Zombie.Shoved"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/tutorial_standards.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+Binary file ./reslists/transition_infinite01.dict matches
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c2m1_highway.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c2m1_highway.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c2m1_highway.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c2m1_highway.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c2m1_highway.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c2m1_highway.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/nav_test.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/nav_test.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/nav_test.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/nav_test.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/nav_test.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/nav_test.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c4m4_milltown_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+Binary file ./reslists/transition_test02.dict matches
+./reslists/c3m4_plantation.snd:"Zombie.Shoved"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c5m5_bridge.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c5m5_bridge.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c5m5_bridge.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c5m5_bridge.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c5m5_bridge.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c5m5_bridge.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c4m2_sugarmill_a.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c3m3_shantytown.snd:"Zombie.Shoved"
+Binary file ./reslists/transition_test01.dict matches
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c5m2_park.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c5m2_park.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c5m2_park.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c5m2_park.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c5m2_park.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c5m2_park.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/nav_test.snd:"Zombie.Shoved"
+./reslists/scavenger_prototype.snd:"Zombie.Shoved"
+./reslists/scavenger_prototype.snd:"Player.Shoved"
+./reslists/c4m3_sugarmill_b.snd:"Zombie.Shoved"
+./reslists/c5m4_quarter.snd:"Zombie.Shoved"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c5m1_waterfront.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c5m1_waterfront.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c5m1_waterfront.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c5m1_waterfront.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c5m1_waterfront.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c5m1_waterfront.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\rage\shoved_1.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\rage\shoved_2.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\rage\shoved_3.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\rage\shoved_4.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/scavenger_prototype.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\rage\shoved_1.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\rage\shoved_2.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\rage\shoved_3.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\rage\shoved_4.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/all.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/backgroundstreet.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c3m1_plankcountry.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c5m4_quarter.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c5m4_quarter.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c5m4_quarter.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c5m4_quarter.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c5m4_quarter.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c5m4_quarter.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c1m2_streets.snd:"Zombie.Shoved"
+./reslists/tutorial_standards_vs.snd:"Zombie.Shoved"
+./reslists/tutorial_standards_vs.snd:"Player.Shoved"
+./reslists/c3m1_plankcountry.snd:"Zombie.Shoved"
+Binary file ./reslists/transition_infinite02.dict matches
+./reslists/c4m4_milltown_b.snd:"Zombie.Shoved"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c4m3_sugarmill_b.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c5m2_park.snd:"Zombie.Shoved"
+Binary file ./reslists/credits.dict matches
+./reslists/c5m3_cemetery.snd:"Zombie.Shoved"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c3m2_swamp.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c3m2_swamp.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c3m2_swamp.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c3m2_swamp.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c3m2_swamp.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c3m2_swamp.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/transition_test02.snd:"Zombie.Shoved"
+./reslists/backgroundstreet.snd:"Zombie.Shoved"
+./reslists/backgroundstreet.snd:"Player.Shoved"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/tutorial_standards_vs.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c3m3_shantytown.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c3m3_shantytown.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c3m3_shantytown.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c3m3_shantytown.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c3m3_shantytown.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c3m3_shantytown.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+Binary file ./reslists/perftest.dict matches
+./reslists/credits.snd:"Zombie.Shoved"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c2m3_coaster.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c2m3_coaster.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c2m3_coaster.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c2m3_coaster.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c2m3_coaster.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c2m3_coaster.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c3m4_plantation.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c3m4_plantation.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c3m4_plantation.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c3m4_plantation.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c3m4_plantation.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c3m4_plantation.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/test_scavenge.snd:"Zombie.Shoved"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/credits.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/credits.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/credits.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/credits.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/credits.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/credits.lst:"left4dead\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c4m2_sugarmill_a.snd:"Zombie.Shoved"
+./reslists/tutorial_standards.snd:"Zombie.Shoved"
+./reslists/tutorial_standards.snd:"Player.Shoved"
+./reslists/c4m5_milltown_escape.snd:"Zombie.Shoved"
+./reslists/c2m4_barns.snd:"Zombie.Shoved"
+./reslists/c2m4_concert.snd:"Zombie.Shoved"
+./reslists/transition_test01.snd:"Zombie.Shoved"
+Binary file ./reslists/backgroundstreet.dict matches
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c5m3_cemetery.lst:"left4dead\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c5m3_cemetery.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_03.wav"
+./reslists/c5m3_cemetery.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_04.wav"
+./reslists/c5m3_cemetery.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_05.wav"
+./reslists/c5m3_cemetery.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_06.wav"
+./reslists/c5m3_cemetery.lst:"left4dead_tempcontent\sound\player\boomer\voice\pain\boomer_shoved_07.wav"
+./reslists/c2m2_fairgrounds.snd:"Zombie.Shoved"
+./reslists/c2m1_highway.snd:"Zombie.Shoved"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_01.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_02.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_03.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_04.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_05.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_06.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_07.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_08.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_09.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_10.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_11.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_12.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_13.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_14.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_15.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_16.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_17.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_1.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_2.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_3.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_03.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_04.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_05.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_06.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\female_boomer_shoved_07.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_03.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_04.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_05.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_06.wav"
+./reslists/c1m1_hotel.lst:"left4dead2\sound\player\boomer\voice\pain\male_boomer_shoved_07.wav"
+./reslists/c5m1_waterfront.snd:"Zombie.Shoved"
+./reslists/c1m3_mall.snd:"Zombie.Shoved"
+./reslists/c1m4_atrium.snd:"Zombie.Shoved"
+./Changelog.md:	* Hunters cannot be shoved at all, not even off of pounced Survivors.
+./Changelog.md:  * Smoker pulls can longer be cleared by shoves, either shoot the tongue or kill/shove the smoker.
+./Changelog.md:  * Hunters can no longer be shoved off, they need to be killed.
+./Changelog.md:  * Hunters can no longer be shoved whilst standing/jumping, their scratch damage has been reduced to 3 to balance this.
+Binary file ./pak01_002.vpk matches
+Binary file ./addons/detourahead.vpk matches
+Binary file ./addons/firetowertrail.vpk matches
+Binary file ./addons/undead_zone.vpk matches
+Binary file ./addons/fairfield_terror_l4d2.vpk matches
+Binary file ./addons/bts_l4d2.vpk matches
+Binary file ./addons/warcelona.vpk matches
+Binary file ./addons/hauntedforest_v4.vpk matches
+Binary file ./addons/heavencanwaitl4d2.vpk matches
+Binary file ./addons/carriedoff.vpk matches
+Binary file ./addons/whispers_of_winter.vpk matches
+Binary file ./addons/tourofterror.vpk matches
+Binary file ./addons/daybreak_v3.vpk matches
+Binary file ./addons/ihatemountains2.vpk matches
+Binary file ./addons/energycrisis.vpk matches
+Binary file ./addons/thedarkparish_av3.vpk matches
+Binary file ./addons/l4d2_dead_center_rebirth.vpk matches
+Binary file ./addons/deadbeforedawn2_dc.vpk matches
+Binary file ./addons/jsarena2.vpk matches
+Binary file ./addons/l4d2_diescraper_362.vpk matches
+./addons/sourcemod/scripting/include/tf2_stocks.inc:	TF_WEAPON_SHOVEL,
+Binary file ./addons/sourcemod/extensions/left4downtown.ext.2.l4d2.so matches
+Binary file ./addons/sourcemod/extensions/ladder_rambos.ext.so matches
+./addons/sourcemod/gamedata/l4d2customcmds.txt:			 *   CTerrorPlayer::OnShovedBySurvivor(CTerrorPlayer*, Vector  const&) - used by L4D2 on Special Infected (got melee'd)
+./addons/sourcemod/gamedata/l4d2customcmds.txt:			"CTerrorPlayer_OnShovedBySurvivor"
+./addons/sourcemod/gamedata/l4d2customcmds.txt:				"linux"	"@_ZN13CTerrorPlayer18OnShovedBySurvivorEPS_RK6Vector"
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:			 * - string "PlayerShoved" has 3 refs, the one furthest into a function should be this one.
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:			 *   CTerrorPlayer::OnShovedBySurvivor(CTerrorPlayer*, Vector  const&) - used by L4D2 on Special Infected (got melee'd)
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:			 * unique string "jockey_ride" in CTerrorPlayer::OnLeptOnSurvivor(), look up for "JockeyZombie.Ride", look up for var_14, CTerrorPlayer::OnShovedBySurvivor is call after that
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:			"CTerrorPlayer_OnShovedBySurvivor"
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:				"linux"    "@_ZN13CTerrorPlayer18OnShovedBySurvivorEPS_RK6Vector"
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:			* CTerrorPlayer::OnShovedByPounceLanding(CTerrorPlayer*)
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:			"CTerrorPlayer__OnShovedByPounceLanding"
+./addons/sourcemod/gamedata/left4downtown.l4d2.txt:				"linux"    		"@_ZN13CTerrorPlayer23OnShovedByPounceLandingEPS_b"
+./addons/sourcemod/gamedata/ladder_rambos.txt:			"CTerrorPlayer::m_fNextShoveTime"
+./addons/sourcemod/gamedata/l4d2_direct.txt:			"CTerrorPlayer::m_iShovePenalty"
+./addons/sourcemod/gamedata/l4d2_direct.txt:			"CTerrorPlayer::m_fNextShoveTime"
+./addons/sourcemod/gamedata/l4d2addresses.txt:*   CTerrorPlayer::OnShovedBySurvivor(CTerrorPlayer*, Vector  const&) - used by L4D2 on Special Infected
+./addons/sourcemod/gamedata/l4d2addresses.txt:"CTerrorPlayer_OnShovedBySurvivor"
+./addons/sourcemod/gamedata/l4d2addresses.txt:"linux"	"@_ZN13CTerrorPlayer18OnShovedBySurvivorEPS_RK6Vector"
+Binary file ./addons/sourcemod/configs/geoip/GeoIPCity.dat matches
+Binary file ./addons/deathaboard2.vpk matches
+Binary file ./addons/openroad.vpk matches
+Binary file ./addons/downpour.vpk matches
+Binary file ./addons/fatalfreight_15.vpk matches
+Binary file ./addons/urbanflight.vpk matches
+Binary file ./addons/city17l4d2.vpk matches
+Binary file ./addons/suicideblitz2.vpk matches
+Binary file ./addons/l4d2_one4nine.vpk matches
+Binary file ./addons/deathsentence.vpk matches
+Binary file ./pak01_dir.vpk matches
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:  Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:  Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:  Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./dump/d5.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./dump/d5.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./dump/d5.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+Binary file ./scenes/scenes.image matches
+Binary file ./pak01_003.vpk matches
+./whitelist.cfg:	left4dead2\sound\npc\infected\action\shoved\mp\shoved_05.wav				check_crc+check_every_map
+./whitelist.cfg:	left4dead2\sound\npc\infected\action\shoved\mp\shoved_15.wav				check_crc+check_every_map
+./whitelist.cfg:	left4dead2\sound\npc\infected\action\shoved\mp\shoved_long_2.wav			check_crc+check_every_map
+./README.md:* Fixed a bug/exploit that allowed Survivors to "self-shove" Jockeys off after already being Jockeyed.
+./README.md:	* Hunters can be shoved off normally, without requiring silly-ish fov angles.
+./README.md:	* Hunters can't be shoved unless pinning a Survivor.
+Binary file ./sound/sound.cache matches
+Binary file ./modelsounds.cache matches
+Binary file ./pak01_008.vpk matches
+Binary file ./pak01_007.vpk matches
+Binary file ./pak01_000.vpk matches
+Binary file ./pak01_001.vpk matches
+Binary file ./bin/server_srv.so matches
+Binary file ./bin/server.so matches
+Binary file ./bin/client.so matches
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:  Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:  Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:  Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+./netprops_list.txt:   Member: m_shoveForce (offset 13236) (type vector) (bits 0) (CoordMP)
+./netprops_list.txt:   Member: m_flNextShoveTime (offset 11512) (type float) (bits 0) (NoScale)
+./netprops_list.txt:   Member: m_iShovePenalty (offset 11516) (type integer) (bits 4) (Unsigned)
+Binary file ./maps/c1m2_streets.bsp matches
+Binary file ./maps/c5m5_bridge.bsp matches
+Binary file ./maps/c2m2_fairgrounds.bsp matches
+Binary file ./maps/navigationtest_a.bsp matches
+Binary file ./maps/c3m1_plankcountry.bsp matches
+Binary file ./maps/c5m4_quarter.bsp matches
+Binary file ./maps/c3m4_plantation.bsp matches
+Binary file ./maps/c2m5_concert.bsp matches
+Binary file ./maps/c4m1_milltown_a.bsp matches
+Binary file ./maps/test_scavenge.bsp matches
+Binary file ./maps/c4m5_milltown_escape.bsp matches
+Binary file ./maps/c1m1_hotel.bsp matches
+Binary file ./maps/styleguide_urban_01.bsp matches
+Binary file ./maps/c5m3_cemetery.bsp matches
+Binary file ./maps/c5m1_waterfront.bsp matches
+Binary file ./maps/test_mall.bsp matches
+Binary file ./maps/c5m1_waterfront_sndscape.bsp matches
+Binary file ./maps/credits.bsp matches
+Binary file ./maps/styleguide_semiurban_01.bsp matches
+Binary file ./maps/c5m2_park.bsp matches
+Binary file ./maps/c3m3_shantytown.bsp matches
+Binary file ./maps/c4m4_milltown_b.bsp matches
+Binary file ./maps/zoo_jukebox.bsp matches
+Binary file ./maps/styleguide_swamp01.bsp matches
+Binary file ./maps/c4m3_sugarmill_b.bsp matches
+Binary file ./maps/styleguide_swamp_cheapwater01.bsp matches
+Binary file ./maps/test_box2.bsp matches
+Binary file ./maps/zoo_carnivalgames.bsp matches
+Binary file ./maps/c2m3_coaster.bsp matches
+Binary file ./maps/c1m4_atrium.bsp matches
+Binary file ./maps/tutorial_standards.bsp matches
+Binary file ./maps/c1m3_mall.bsp matches
+Binary file ./maps/c2m1_highway.bsp matches
+Binary file ./maps/c2m4_barns.bsp matches
+Binary file ./maps/motionprimingtest.bsp matches
+Binary file ./maps/zoo_trafficsigns.bsp matches
+Binary file ./maps/motionprimingtest_rev.bsp matches
+Binary file ./maps/c4m2_sugarmill_a.bsp matches
+Binary file ./maps/c3m2_swamp.bsp matches
+Binary file ./maps/tutorial_standards_vs.bsp matches
+Binary file ./maps/test_macguffin.bsp matches
+./ConfigUpdates/Zonemod-1.9.3/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./ConfigUpdates/Zonemod-1.9.3/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./ConfigUpdates/Zonemod-1.9.3/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 30
+./ConfigUpdates/Zonemod-1.7.1/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./ConfigUpdates/Zonemod-1.7.1/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./ConfigUpdates/Zonemod-1.7.1/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 15
+./ConfigUpdates/Zonemod-1.7/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./ConfigUpdates/Zonemod-1.7/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./ConfigUpdates/Zonemod-1.7/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 15
+./ConfigUpdates/Zonemod-1.8/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_min 4
+./ConfigUpdates/Zonemod-1.8/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar z_exploding_shove_max 4
+./ConfigUpdates/Zonemod-1.8/cfg/cfgogl/zonemod/shared_cvars.cfg:confogl_addcvar versus_shove_jockey_fov_leaping 15
