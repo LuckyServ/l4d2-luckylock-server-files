@@ -68,7 +68,7 @@
 			"name" "1v1 Scavogl"
 		}
 	}
-	"Scavgunt"
+	"Scavhunt"
 	{
 		"scavhunt4v4"
 		{
