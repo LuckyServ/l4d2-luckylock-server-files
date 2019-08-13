@@ -42,7 +42,7 @@
 			"name" "1v1 Apex Hunters"
 		}
 	}
-	"OpenMod 1.1"
+	"OpenMod 1.2"
 	{
 		"openmod"
 		{
