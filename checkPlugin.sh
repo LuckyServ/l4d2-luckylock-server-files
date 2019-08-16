@@ -45,7 +45,7 @@ done
 }
 
 # Get the list of used plugins in optional
-USED_PLUGINS="$(grep '^ *sm plugins load optional' $(find $PATH_CONFIG -type f) -h | sed 's/sm plugins load //g' | sort -u)"
+USED_PLUGINS="$(grep '^sm plugins load optional.*\.smx' $(find $PATH_CONFIG -type f) -oh | sed 's/sm plugins load //g' | sort -u)"
 
 # Get the list of plugins that are present in optional
 ALL_PLUGINS="$(find "$PATH_PLUGINS" -type f | sed 's/addons\/sourcemod\/plugins\///g' | sort)"
