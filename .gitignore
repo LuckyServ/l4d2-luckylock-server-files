@@ -1,4 +1,5 @@
 update
+cfg/server_void.cfg
 *.vpk
 *.log
 cfg/server.cfg
